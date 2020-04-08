@@ -27,11 +27,10 @@ function DrawZ(a) {
             }
         } else {
             for (let j = 0; j < a; j++) {
-                if (j == b) {
+                if (j == b)
                     process.stdout.write('1');
-                } else {
+                else
                     process.stdout.write('0');
-                }
             }
         }
         b--;
@@ -47,11 +46,10 @@ function AandB(a, b) {
     for (let i = 0; i < a; i++) {
         buf = firstLetter
         for (let j = 0; j < b; j++) {
-            if (j%2) {
+            if (j%2)
                 process.stdout.write(secondLetter);
-            } else {
+            else
                 process.stdout.write(buf);
-            }
         }
         firstLetter = secondLetter;
         secondLetter = buf;
